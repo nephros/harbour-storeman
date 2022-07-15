@@ -69,6 +69,30 @@ Url:
   Bugtracker: %{url}/issues
 %endif
 
+%package sailjail-config
+Summary: Configuration overrides for a jailed Storeman
+# the Secrets permission is only in 4.3+
+Requires: sailfish-version > 4.2.0
+
+%description sailjail-config
+%summary
+
+%if "%{?vendor}" == "chum"
+PackageName: Sailjail for Storeman
+Type: addon
+Categories:
+ - System
+ - PackageManager
+DeveloperName: Storeman developers (mentaljam)
+Custom:
+  Repo: %{url}
+Icon: %{url}/raw/master/icons/harbour-storeman.svg
+Url:
+  Homepage: %{url}
+  Help: %{url}/issues
+  Bugtracker: %{url}/issues
+%endif
+
 %prep
 %setup -q
 
@@ -100,3 +124,8 @@ ssu ur
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/mapplauncherd/privileges.d/%{name}
 %{_datadir}/dbus-1/services/harbour.storeman.service
+
+%files sailjail-config
+%config %{_sysconfdir}/sailjail/applications/%{name}.desktop
+%config %{_sysconfdir}/sailjail/permissions/%{name}.profile
+%config %{_sysconfdir}/firejail/%{name}.local

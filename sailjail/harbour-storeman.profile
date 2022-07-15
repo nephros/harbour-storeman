@@ -1,0 +1,76 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog = harbour-storeman
+# x-sailjail-translation-key-description = permission-la-data
+# x-sailjail-description = Storeman permissions
+# x-sailjail-translation-key-long-description = permission-la-data_description
+# x-sailjail-long-description = Access necessary resources for Storeman to work
+
+private-bin /usr/bin/harbour-storeman
+
+writable-run-user
+
+# we need to be able to read
+# /home/.zypp-cache/solv/@System/solv
+# but no stanza in sailjail will make it work.
+# but doing it in firejail config works
+#
+# use bare name without path here! it will look files in /etc/firejail
+include harbour-storeman.local
+
+# needed to make repo lists work.
+# TODO: this ia a copy of the real thing an will not be sunched with it!
+# i.e. it will be out of date if repos change
+private-etc ssu/ssu.ini
+
+
+### D-Bus
+### BEG D-Bus SESSION things
+dbus-user filter
+
+dbus-user.talk org.freedesktop.DBus
+dbus-user.call org.freedesktop.DBus=org.freedesktop.DBus@/*
+dbus-user.broadcast org.freedesktop.DBus=org.freedesktop.DBus@/*
+
+# BEG dbus session service
+dbus-user.own harbour.storeman.service
+dbus-user.own harbour.storeman.service.*
+dbus-user.talk harbour.storeman.service
+dbus-user.call harbour.storeman.service=harbour.storeman.service@/*
+dbus-user.call *=harbour.storeman.service.openPage@/*
+dbus-user.call *=harbour.storeman.service.updateAll@/*
+dbus-user.call *=harbour.storeman.service.updateRepos@/*
+# END dbus session service
+#
+# BEG dbus service PackageKit
+dbus-user.talk org.freedesktop.PackageKit
+dbus-user.broadcast org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
+dbus-user.broadcast org.freedesktop.PackageKit=org.freedesktop.PackageKit.*@/*
+dbus-user.call org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
+dbus-user.call *=org.freedesktop.PackageKit.CreateTransaction@/*
+# END dbus service PackageKit
+
+### END D-Bus SESSION things
+
+
+### BEG D-Bus SYSTEM things
+dbus-system filter
+
+# BEG dbus service ssu
+dbus-system.talk org.nemo.ssu
+dbus-system.broadcast org.nemo.ssu=org.nemo.ssu@/*
+dbus-system.broadcast org.nemo.ssu=org.nemo.ssu.*@/*
+dbus-system.call org.nemo.ssu=org.nemo.ssu@/*
+dbus-system.call *=org.nemo.ssu.addRepo@/*
+dbus-system.call *=org.nemo.ssu.modifyRepo@/*
+# END dbus service ssu
+
+# BEG dbus service PackageKit
+dbus-system.talk org.freedesktop.PackageKit
+dbus-system.broadcast org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
+dbus-system.broadcast org.freedesktop.PackageKit=org.freedesktop.PackageKit.*@/*
+dbus-system.call org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
+dbus-system.call *=org.freedesktop.PackageKit.CreateTransaction@/*
+# END dbus service PackageKit
+
+### END D-Bus SYSTEM things
