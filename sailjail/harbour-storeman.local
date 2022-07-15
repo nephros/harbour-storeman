@@ -1,0 +1,8 @@
+allusers
+read-only /home/.zypp-cache/*
+read-only /home/.zypp-cache/solv/*
+read-only /home/.zypp-cache/solv/@System/*
+read-only /home/.zypp-cache/solv/harbour-storeman-obs/*
+read-only /home/.zypp-cache/solv/openrepos-*/*
+
+read-only /etc/ssu/ssu.ini

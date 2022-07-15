@@ -100,3 +100,5 @@ ssu ur
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/mapplauncherd/privileges.d/%{name}
 %{_datadir}/dbus-1/services/harbour.storeman.service
+%{_sysconfdir}/sailjail/permissions/%{name}.profile
+%{_sysconfdir}/firejail/%{name}.local
