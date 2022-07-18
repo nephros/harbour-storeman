@@ -19,8 +19,10 @@ writable-run-user
 include harbour-storeman.local
 # the same is true for: /etc/ssu/ssu.ini
 
+private-etc ssu/ssu.ini
+
 # for some reason the Secrets permission does not work for this:
-whitelist ${RUNUSER}/sailfishsecretsd/p2pSocket
+noblacklist ${RUNUSER}/sailfishsecretsd/p2pSocket
 
 
 ### D-Bus
@@ -43,6 +45,8 @@ dbus-user.call *=harbour.storeman.service.updateRepos@/*
 #
 # BEG dbus service PackageKit
 dbus-user.talk org.freedesktop.PackageKit
+dbus-user.broadcast org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
+dbus-user.broadcast org.freedesktop.PackageKit=org.freedesktop.PackageKit.*@/*
 dbus-user.call org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
 dbus-user.call *=org.freedesktop.PackageKit.CreateTransaction@/*
 # END dbus service PackageKit
@@ -62,6 +66,8 @@ dbus-system filter
 
 # BEG dbus service ssu
 dbus-system.talk org.nemo.ssu
+dbus-system.broadcast org.nemo.ssu=org.nemo.ssu@/*
+dbus-system.broadcast org.nemo.ssu=org.nemo.ssu.*@/*
 dbus-system.call org.nemo.ssu=org.nemo.ssu@/*
 dbus-system.call *=org.nemo.ssu.addRepo@/*
 dbus-system.call *=org.nemo.ssu.modifyRepo@/*
@@ -69,16 +75,10 @@ dbus-system.call *=org.nemo.ssu.modifyRepo@/*
 
 # BEG dbus service PackageKit
 dbus-system.talk org.freedesktop.PackageKit
+dbus-system.broadcast org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
+dbus-system.broadcast org.freedesktop.PackageKit=org.freedesktop.PackageKit.*@/*
 dbus-system.call org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
 dbus-system.call *=org.freedesktop.PackageKit.CreateTransaction@/*
-dbus-system.call *=org.freedesktop.PackageKit.Transaction.Resolve@/*
-dbus-system.call *=org.freedesktop.PackageKit.Transaction.InstallPackages@/*
-dbus-system.call *=org.freedesktop.PackageKit.Transaction.UpdatePackages@/*
-dbus-system.call *=org.freedesktop.PackageKit.Transaction.RemovePackages@/*
-dbus-system.call *=org.freedesktop.PackageKit.Transaction.InstallFiles@/*
-dbus-system.call *=org.freedesktop.PackageKit.Transaction.RepoSetData@/*
-dbus-system.call *=org.freedesktop.PackageKit.Transaction.RefreshCache@/*
-dbus-system.call *=org.freedesktop.PackageKit.Transaction.GetUpdates@/*
 # END dbus service PackageKit
 
 ### END D-Bus SYSTEM things
