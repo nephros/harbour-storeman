@@ -105,11 +105,6 @@ make %{?_smp_mflags}
 desktop-file-install --delete-original --dir=%{buildroot}%{_datadir}/applications \
    %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-#pushd sailjail
-#desktop-file-install --delete-original --dir=%%{buildroot}%%{_sysconfdir}/sailjail/applications \
-#   %%{buildroot}%%{_sysconfdir}/sailjail/%%{name}.desktop
-#popd
-
 %posttrans
 ssu rr mentaljam-obs
 rm -f /var/cache/ssu/features.ini
