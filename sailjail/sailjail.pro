@@ -8,6 +8,9 @@ OTHER_FILES += \
 
 INSTALLS += desktop sjprofile fjprofile
 
+desktop.files = harbour-storeman.desktop
+desktop.path = $$INSTALL_ROOT/etc/sailjail/applications
+
 sjprofile.files = harbour-storeman.profile
 sjprofile.path = $$INSTALL_ROOT/etc/sailjail/permissions
 
