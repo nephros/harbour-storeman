@@ -1,12 +1,6 @@
 allusers
 noblacklist /home
 noblacklist /home/.zypp-cache
-#noblacklist /home/.zypp-cache/solv/@System
-#noblacklist /home/.zypp-cache/solv/harbour-storeman-obs
-#noblacklist /home/.zypp-cache/solv/openrepos-*
 read-only /home/.zypp-cache/solv/@System
 read-only /home/.zypp-cache/solv/harbour-storeman-obs
 read-only /home/.zypp-cache/solv/openrepos-*
-
-#noblacklist /etc/ssu/ssu.ini
-read-only /etc/ssu/ssu.ini

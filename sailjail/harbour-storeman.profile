@@ -4,7 +4,7 @@
 # x-sailjail-translation-key-description = permission-la-data
 # x-sailjail-description = Storeman permissions
 # x-sailjail-translation-key-long-description = permission-la-data_description
-# x-sailjail-long-description = Access necessary ressources for Storeman to work
+# x-sailjail-long-description = Access necessary resources for Storeman to work
 
 private-bin /usr/bin/harbour-storeman
 
@@ -17,12 +17,11 @@ writable-run-user
 #
 # use bare name without path here! it will look files in /etc/firejail
 include harbour-storeman.local
-# the same is true for: /etc/ssu/ssu.ini
 
+# needed to make repo lists work.
+# TODO: this ia a copy of the real thing an will not be sunched with it!
+# i.e. it will be out of date if repos change
 private-etc ssu/ssu.ini
-
-# for some reason the Secrets permission does not work for this:
-noblacklist ${RUNUSER}/sailfishsecretsd/p2pSocket
 
 
 ### D-Bus
@@ -51,13 +50,6 @@ dbus-user.call org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
 dbus-user.call *=org.freedesktop.PackageKit.CreateTransaction@/*
 # END dbus service PackageKit
 
-# BEG dbus service Tracker
-# org.freedesktop.Tracker3.Miner.Files call org.freedesktop.DBus.Peer.Ping at /org/freedesktop/Tracker3/Endpoin
-# MediaIndexing permission should grant this already
-# dbus-user.talk org.freedesktop.Tracker3
-# dbus-user.call org.freedesktop.Tracker3=org.freedesktop.Tracker3@/*
-# dbus-user.call *=org.freedesktop.Tracker3.Miner.Files@/*
-# END dbus service Tracker
 ### END D-Bus SESSION things
 
 
