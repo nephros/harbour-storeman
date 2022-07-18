@@ -76,4 +76,10 @@ dbus-system.call *=org.nemo.ssu.modifyRepo@/*
 #dbus-system.call *=harbour.storeman.service.updateAll@/*
 # END dbus system service
 
+# BEG dbus service PackageKit
+dbus-system.talk org.freedesktop.PackageKit
+dbus-system.call org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
+dbus-system.call *=org.freedesktop.PackageKit.CreateTransaction@/*
+# END dbus service PackageKit
+
 ### END D-Bus SYSTEM things
