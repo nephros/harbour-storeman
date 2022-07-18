@@ -105,10 +105,10 @@ make %{?_smp_mflags}
 desktop-file-install --delete-original --dir=%{buildroot}%{_datadir}/applications \
    %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-pushd sailjail
-desktop-file-install --delete-original --dir=%{buildroot}%{_sysconfdir}/sailjail/applications \
-   %{buildroot}%{_sysconfdir}/sailjail/%{name}.desktop
-popd
+#pushd sailjail
+#desktop-file-install --delete-original --dir=%%{buildroot}%%{_sysconfdir}/sailjail/applications \
+#   %%{buildroot}%%{_sysconfdir}/sailjail/%%{name}.desktop
+#popd
 
 %posttrans
 ssu rr mentaljam-obs
@@ -131,6 +131,6 @@ ssu ur
 %{_datadir}/dbus-1/services/harbour.storeman.service
 
 %files sailjail-config
-%config %{_sysconfdir}/applications/%{name}.desktop
+%config %{_sysconfdir}/sailjail/applications/%{name}.desktop
 %config %{_sysconfdir}/sailjail/permissions/%{name}.profile
 %config %{_sysconfdir}/firejail/%{name}.local

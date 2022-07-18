@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-storeman
+Exec=/usr/bin/sailjail --trace=\\$XDG_RUNTIME_DIR/storeman-trace -p harbour-storeman.desktop /usr/bin/harbour-storeman
+Name=Storeman Debug
+X-Maemo-Service=harbour.storeman.service
+X-Maemo-Object-Path=/harbour/storeman/service
+X-Maemo-Method=harbour.storeman.service.openPage
+
+[X-Sailjail]
+Sandboxing=enabled
+Permissions=Internet;Notifications;Secrets;Connman;ApplicationInstallation;MediaIndexing;Downloads
+OrganizationName=harbour-storeman
+ApplicationName=Storeman
+DataDirectory=harbour-storeman
+#ApplicationName=harbour-storeman
+ExecDBus=/usr/bin/sailjail --trace=\\$XDG_RUNTIME_DIR/storeman-dbus-trace -p harbour-storeman.desktop /usr/bin/harbour-storeman
+
+[X-HarbourBackup]
+BackupPathList=.config/harbour-storeman/:.local/share/harbour-storeman/
+
