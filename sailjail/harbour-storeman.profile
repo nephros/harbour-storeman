@@ -67,19 +67,18 @@ dbus-system.call *=org.nemo.ssu.addRepo@/*
 dbus-system.call *=org.nemo.ssu.modifyRepo@/*
 # END dbus service ssu
 
-# BEG dbus system service
-#dbus-system filter
-#dbus-system.own harbour.storeman.service
-#dbus-system.talk harbour.storeman.service
-#dbus-system.call harbour.storeman.service=harbour.storeman.service@/*
-#dbus-system.call *=harbour.storeman.service.openPage@/*
-#dbus-system.call *=harbour.storeman.service.updateAll@/*
-# END dbus system service
-
 # BEG dbus service PackageKit
 dbus-system.talk org.freedesktop.PackageKit
 dbus-system.call org.freedesktop.PackageKit=org.freedesktop.PackageKit@/*
 dbus-system.call *=org.freedesktop.PackageKit.CreateTransaction@/*
+dbus-system.call *=org.freedesktop.PackageKit.Transaction.Resolve@/*
+dbus-system.call *=org.freedesktop.PackageKit.Transaction.InstallPackages@/*
+dbus-system.call *=org.freedesktop.PackageKit.Transaction.UpdatePackages@/*
+dbus-system.call *=org.freedesktop.PackageKit.Transaction.RemovePackages@/*
+dbus-system.call *=org.freedesktop.PackageKit.Transaction.InstallFiles@/*
+dbus-system.call *=org.freedesktop.PackageKit.Transaction.RepoSetData@/*
+dbus-system.call *=org.freedesktop.PackageKit.Transaction.RefreshCache@/*
+dbus-system.call *=org.freedesktop.PackageKit.Transaction.GetUpdates@/*
 # END dbus service PackageKit
 
 ### END D-Bus SYSTEM things
