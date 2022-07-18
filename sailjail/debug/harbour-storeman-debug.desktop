@@ -10,7 +10,7 @@ X-Maemo-Method=harbour.storeman.service.openPage
 
 [X-Sailjail]
 Sandboxing=enabled
-Permissions=Internet;Notifications;Secrets;Connman;ApplicationInstallation;MediaIndexing;Downloads
+Permissions=Internet;Notifications;Secrets;Connman;ApplicationInstallation;MediaIndexing;Downloads;Documents
 OrganizationName=harbour-storeman
 ApplicationName=Storeman
 DataDirectory=harbour-storeman
