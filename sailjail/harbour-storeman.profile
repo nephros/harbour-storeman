@@ -6,7 +6,10 @@
 # x-sailjail-translation-key-long-description = permission-la-data_description
 # x-sailjail-long-description = Access necessary resources for Storeman to work
 
-private-bin /usr/bin/harbour-storeman
+# x-sailjail-permission = Secrets
+
+# we allow ourselves, and rpm (which we only use in -q mode anyway)
+private-bin harbour-storeman,rpm
 
 writable-run-user
 
@@ -23,14 +26,12 @@ include harbour-storeman.local
 # i.e. it will be out of date if repos change
 private-etc ssu/ssu.ini
 
+# this is an internal permission according to https://github.com/sailfishos/sailjail-permissions/README.md
+# so we include it here rather than in the Permissions= key in the .desktop file
+include /etc/sailjail/permissions/Secrets.permission
 
 ### D-Bus
 ### BEG D-Bus SESSION things
-dbus-user filter
-
-dbus-user.talk org.freedesktop.DBus
-dbus-user.call org.freedesktop.DBus=org.freedesktop.DBus@/*
-dbus-user.broadcast org.freedesktop.DBus=org.freedesktop.DBus@/*
 
 # BEG dbus session service
 dbus-user.own harbour.storeman.service
@@ -54,7 +55,6 @@ dbus-user.call *=org.freedesktop.PackageKit.CreateTransaction@/*
 
 
 ### BEG D-Bus SYSTEM things
-dbus-system filter
 
 # BEG dbus service ssu
 dbus-system.talk org.nemo.ssu
