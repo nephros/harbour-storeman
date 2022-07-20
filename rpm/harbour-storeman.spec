@@ -35,6 +35,9 @@ BuildRequires:  desktop-file-utils
 Conflicts:      %{name}-installer
 Obsoletes:      %{name}-installer
 
+
+%define localauthority_dir polkit-1/localauthority/50-local.d
+
 # This description section includes metadata for SailfishOS:Chum, see
 # https://github.com/sailfishos-chum/main/blob/main/Metadata.md
 %description
@@ -130,3 +133,5 @@ ssu ur
 %config %{_sysconfdir}/sailjail/applications/%{name}.desktop
 %config %{_sysconfdir}/sailjail/permissions/%{name}.profile
 %config %{_sysconfdir}/firejail/%{name}.local
+%{_sysconfdir}/%{localauthority_dir}/50-%{name}-packagekit.pkla
+#%%{_sharedstatedir}/%%{localauthority_dir}/50-%%{name}-packagekit.pkla

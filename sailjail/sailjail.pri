@@ -13,3 +13,7 @@ sjprofile.path = $$INSTALL_ROOT/etc/sailjail/permissions
 
 fjprofile.files = $$PWD/harbour-storeman.local
 fjprofile.path = $$INSTALL_ROOT/etc/firejail
+
+pkla.files = polkit/50-harbour-storeman-packagekit.pkla
+#pkla.path = $$INSTALL_ROOT/var/lib/polkit-1/localauthority/50-local.d
+pkla.path = $$INSTALL_ROOT/etc/polkit-1/localauthority/50-local.d
