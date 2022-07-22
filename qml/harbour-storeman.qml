@@ -12,8 +12,8 @@ ApplicationWindow
     // TODO: Use Qt.application.displayName (available since Qt 5.9)
     readonly property string applicationDisplayName: "Storeman"
     readonly property string applicationIcon: Qt.application.name
-    readonly property string dbusService: "harbour.storeman.service"
-    readonly property string dbusPath: "/harbour/storeman/service"
+    readonly property string dbusService: "harbour.storeman"
+    readonly property string dbusPath: "/harbour/storeman"
     readonly property string dbusInterface: dbusService
     //% "Show details"
     readonly property string _showDetailsId: QT_TRID_NOOP("orn-show-details")
@@ -144,7 +144,7 @@ ApplicationWindow
         iface: dbusInterface
         path: dbusPath
         xml: '\
-  <interface name="harbour.storeman.service">
+  <interface name="harbour.storeman">
     <method name="openPage">
       <arg name="page" type="s" direction="in">
         <doc:doc>

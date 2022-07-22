@@ -4,9 +4,9 @@ X-Nemo-Application-Type=silica-qt5
 Icon=harbour-storeman
 Exec=harbour-storeman
 Name=Storeman
-X-Maemo-Service=harbour.storeman.service
-X-Maemo-Object-Path=/harbour/storeman/service
-X-Maemo-Method=harbour.storeman.service.openPage
+X-Maemo-Service=harbour.storeman
+X-Maemo-Object-Path=/harbour/storeman
+X-Maemo-Method=harbour.storeman.openPage
 
 [X-Sailjail]
 Sandboxing=enabled

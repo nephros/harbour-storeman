@@ -4,9 +4,9 @@ X-Nemo-Application-Type=silica-qt5
 Icon=harbour-storeman
 Exec=/usr/bin/sailjail --trace=\\$XDG_RUNTIME_DIR/storeman-trace -p harbour-storeman.desktop /usr/bin/harbour-storeman
 Name=Storeman Debug
-X-Maemo-Service=harbour.storeman.service
-X-Maemo-Object-Path=/harbour/storeman/service
-X-Maemo-Method=harbour.storeman.service.openPage
+X-Maemo-Service=harbour.storeman
+X-Maemo-Object-Path=/harbour/storeman
+X-Maemo-Method=harbour.storeman.openPage
 
 [X-Sailjail]
 Sandboxing=enabled
