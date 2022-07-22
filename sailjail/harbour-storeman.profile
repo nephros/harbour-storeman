@@ -34,13 +34,13 @@ include /etc/sailjail/permissions/Secrets.permission
 ### BEG D-Bus SESSION things
 
 # BEG dbus session service
-dbus-user.own harbour.storeman.service
-dbus-user.own harbour.storeman.service.*
-dbus-user.talk harbour.storeman.service
-dbus-user.call harbour.storeman.service=harbour.storeman.service@/*
-dbus-user.call *=harbour.storeman.service.openPage@/*
-dbus-user.call *=harbour.storeman.service.updateAll@/*
-dbus-user.call *=harbour.storeman.service.updateRepos@/*
+dbus-user.own harbour.storeman
+dbus-user.own harbour.storeman.*
+dbus-user.talk harbour.storeman
+dbus-user.call harbour.storeman=harbour.storeman@/*
+dbus-user.call *=harbour.storeman.openPage@/*
+dbus-user.call *=harbour.storeman.updateAll@/*
+dbus-user.call *=harbour.storeman.updateRepos@/*
 # END dbus session service
 #
 # BEG dbus service PackageKit
