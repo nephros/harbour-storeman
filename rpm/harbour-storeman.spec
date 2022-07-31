@@ -74,8 +74,8 @@ Url:
 
 %package sailjail-config
 Summary: Configuration overrides for a jailed Storeman
-# the Secrets permission is only in 4.3+
-Requires: sailfish-version > 4.2.0
+# The Secrets permission exists only in SFOS ≥ 4.3.0
+Requires: sailfish-version >= 4.3.0
 BuildArch:  noarch
 
 %description sailjail-config
