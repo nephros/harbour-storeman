@@ -133,5 +133,5 @@ ssu ur
 %config %{_sysconfdir}/sailjail/applications/%{name}.desktop
 %config %{_sysconfdir}/sailjail/permissions/%{name}.profile
 %config %{_sysconfdir}/firejail/%{name}.local
-%{_sysconfdir}/%{localauthority_dir}/50-%{name}-packagekit.pkla
-#%%{_sharedstatedir}/%%{localauthority_dir}/50-%%{name}-packagekit.pkla
+%{_sysconfdir}/%{localauthority_dir}/50-%{name}.pkla
+#%%{_sharedstatedir}/%%{localauthority_dir}/50-%%{name}.pkla
