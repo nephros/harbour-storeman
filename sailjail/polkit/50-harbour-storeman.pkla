@@ -1,4 +1,4 @@
-[Storeman Installer]
+[Storeman]
 Identity=unix-group:ssu
 Action=org.freedesktop.packagekit.package-install-untrusted;org.freedesktop.packagekit.system-sources-configure;org.freedesktop.packagekit.package-remove
 ResultAny=yes
