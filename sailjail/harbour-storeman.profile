@@ -9,6 +9,7 @@
 # x-sailjail-permission = Secrets
 # this is an internal permission according to https://github.com/sailfishos/sailjail-permissions/tree/master#permissions
 # so we include it here rather than in the Permissions= key in the .desktop file
+# and asked Jolla how to handle this in general: https://github.com/sailfishos/sailjail-permissions/issues/127
 include /etc/sailjail/permissions/Secrets.permission
 
 # we allow ourselves, and rpm (which we only use in -q mode anyway)
