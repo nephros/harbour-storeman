@@ -7,6 +7,10 @@
 # x-sailjail-long-description = Access necessary resources for Storeman to work
 
 # x-sailjail-permission = Secrets
+# this is an internal permission according to https://github.com/sailfishos/sailjail-permissions/tree/master#permissions
+# so we include it here rather than in the Permissions= key in the .desktop file
+# and asked Jolla how to handle this in general: https://github.com/sailfishos/sailjail-permissions/issues/127
+include /etc/sailjail/permissions/Secrets.permission
 
 # we allow ourselves, and rpm (which we only use in -q mode anyway)
 private-bin harbour-storeman,rpm
@@ -18,17 +22,14 @@ writable-run-user
 # but no stanza in sailjail will make it work.
 # but doing it in firejail config works
 #
-# use bare name without path here! it will look files in /etc/firejail
+# use bare name without path here! it will look for files in /etc/firejail
 include harbour-storeman.local
 
 # needed to make repo lists work.
-# TODO: this ia a copy of the real thing an will not be sunched with it!
-# i.e. it will be out of date if repos change
+# TODO: this is a copy of the real thing and will not be synchronised with it!
+# i.e., it will become stale when the repos config is altered
 private-etc ssu/ssu.ini
 
-# this is an internal permission according to https://github.com/sailfishos/sailjail-permissions/README.md
-# so we include it here rather than in the Permissions= key in the .desktop file
-include /etc/sailjail/permissions/Secrets.permission
 
 ### D-Bus
 ### BEG D-Bus SESSION things
