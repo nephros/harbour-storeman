@@ -26,7 +26,7 @@ include harbour-storeman.local
 
 # needed to make repo lists work.
 # TODO: this is a copy of the real thing and will not be synchronised with it!
-# i.e., it will become stale when the repo config is altered
+# i.e., it will become stale when the repos config is altered
 private-etc ssu/ssu.ini
 
 
