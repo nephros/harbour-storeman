@@ -73,10 +73,21 @@ ListItem {
             truncationMode: TruncationMode.Elide
         }
 
+        // Description
+        Label {
+            id: descLabel
+            anchors.top: categoryLabel.bottom
+            width: titleLabel.width
+            text: model.description
+            font.pixelSize: Theme.fontSizeExtraSmall
+            color: Theme.secondaryColor
+            truncationMode: TruncationMode.Fade
+        }
+
         // Category
         Label {
             id: categoryLabel
-            anchors.top: titleLabel.bottom
+            anchors.top: descLabel.bottom
             width: titleLabel.width
             text: model.category
             font.pixelSize: Theme.fontSizeExtraSmall
