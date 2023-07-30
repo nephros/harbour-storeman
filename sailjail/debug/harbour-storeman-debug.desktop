@@ -12,7 +12,7 @@ X-Maemo-Method=harbour.storeman.service.openPage
 Sandboxing=enabled
 # Reference: https://github.com/sailfishos/sailjail-permissions#permissions
 # Permissions are listed in the order they appear there.  Unsure if `AppLaunch` is needed, because
-# the description does not fit to its name.  Even less sure about `MediaIndexing` and `Connman`.
+# the description does not fit to its name.  Even less sure about `MediaIndexing`.
 # `UserDirs` is not used, because we do not want access to Music, Pictures and Videos.
 # Added `WebView;Base;Compatibility;GnuPG;Privileged` only to this `debug.desktop` file.
 Permissions=AppLaunch;ApplicationInstallation;Documents;Downloads;Internet;MediaIndexing;PublicDir;RemovableMedia;Secrets;WebView;Base;Compatibility;Connman;GnuPG;Notifications;Privileged;Sharing
