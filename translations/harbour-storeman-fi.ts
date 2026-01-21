@@ -96,11 +96,11 @@
     </message>
     <message id="orn-package-installed">
         <source>Package %0 was successfully installed</source>
-        <translation>%0 paketti asennettiin onnistuneesti</translation>
+        <translation>Paketti %0 asennettiin onnistuneesti</translation>
     </message>
     <message id="orn-package-removed">
         <source>Package %0 was successfully removed</source>
-        <translation>%0 paketti poistettiin onnistuneesti</translation>
+        <translation>Paketti 0% poistettiin onnistuneesti</translation>
     </message>
     <message id="orn-installed">
         <source>Installed</source>
