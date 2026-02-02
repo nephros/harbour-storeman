@@ -143,7 +143,9 @@ ListModel {
         coordinators: [
             ListElement { name: "storeslem" }
         ]
-        translators: []
+        translators:  [
+            ListElement { name: "fsilye" }
+        ]
         reviewers: []
     }
 
