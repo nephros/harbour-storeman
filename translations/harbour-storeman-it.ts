@@ -7,7 +7,7 @@
     </message>
     <message id="orn-repositories">
         <source>Repositories</source>
-        <translation>Repository</translation>
+        <translation>Repository installati</translation>
     </message>
     <message id="orn-refresh">
         <source>Refresh</source>
@@ -630,7 +630,7 @@
     </message>
     <message id="orn-pmstate-addingrepo">
         <source>Adding repo %0</source>
-        <translation>Aggiunta repository %0</translation>
+        <translation>Aggiungi repository %0</translation>
     </message>
     <message id="orn-pmstate-removingrepo">
         <source>Removing repo %0</source>
@@ -857,7 +857,7 @@
     </message>
     <message id="orn-repo-allremoved">
         <source>All repositories were removed</source>
-        <translation>Tutti i repo sono stati rimossi</translation>
+        <translation>Tutti i repository sono stati rimossi</translation>
     </message>
     <message id="orn-search-on-openrepos">
         <source>Search on OpenRepos.net</source>
@@ -989,11 +989,11 @@
     </message>
     <message id="orn-repository">
         <source>Repository</source>
-        <translation>Repository</translation>
+        <translation>Repository attivi</translation>
     </message>
     <message id="orn-myrepository">
         <source>My repository</source>
-        <translation>Repository attivi</translation>
+        <translation>Repository personale</translation>
     </message>
     <message id="orn-donation">
         <source>Donation</source>
