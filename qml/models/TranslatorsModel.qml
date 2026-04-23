@@ -77,7 +77,9 @@ ListModel {
             ListElement { name: "raketti" },
             ListElement { name: "direc85" }
         ]
-        reviewers: []
+        reviewers: [
+            ListElement { name: "tuplasuhveli" }
+        ]
     }
 
     ListElement {
