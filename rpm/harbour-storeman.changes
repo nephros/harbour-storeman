@@ -1,5 +1,6 @@
-* Sun Feb 08 2026 olf <Olf0@users.noreply.github.com> - 0.7.4
-- 
+* Sat Apr 24 2026 olf <Olf0@users.noreply.github.com> - 0.7.4
+- Improve Italian (`it`) tanslation (#544) by @legacychimera247
+- Add Japanese translation (#547) by @Macindebundra
 
 * Mon Feb 02 2026 olf <Olf0@users.noreply.github.com> - 0.7.3
 - Update translations: Tartar (`tt`) by @arustg (#517), Swedish (`sv`) by @eson57 (#516), Slovenian (`sl`; #525), Slovak (`sk`) by holask@transifex (#524), French (`fr`; #520), Estonian (`et`) by tlend@transifex (#519), German (`de`; #518), Hungarian (`hu`) by @martonmiklos (#521), Spanish (`es`) by @carmenfdezb (#526), Polish (`pl`) by @atlochowski (#522), Russian (`ru`) by @dikonov / @arustg (#523), Finnish (`fi`) by @tuplasuhveli (#531, #534)
