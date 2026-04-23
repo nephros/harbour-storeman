@@ -113,6 +113,17 @@ ListModel {
         translators: [
             ListElement { name: "claustn" }
         ]
+        reviewers: [
+            ListElement { name: "legacychimera247" }
+        ]
+    }
+
+    ListElement {
+        locale: "ja"
+        coordinators: []
+        translators: [
+            ListElement { name: "Macindebundra" }
+        ]
         reviewers: []
     }
 
