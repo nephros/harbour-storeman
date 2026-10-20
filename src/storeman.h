@@ -77,6 +77,10 @@ public:
     Q_INVOKABLE bool showHint(Storeman::Hint hint);
     Q_INVOKABLE void setHintShowed(Storeman::Hint hint);
 
+    Q_INVOKABLE void filterUser(const QString& user);
+    Q_INVOKABLE void unFilterUser(const QString& user);
+    Q_INVOKABLE bool isFilteredUser(const QString& user);
+
     Q_INVOKABLE OrnApplication *cachedApp(quint32 appId);
 
 public slots:

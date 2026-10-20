@@ -180,6 +180,15 @@ Page {
                                                   previousAppId: app.appId
                                               })
             }
+            TextSwitch {
+                anchors.right: parent.right
+                //% "Hide all by %0"
+                text: qsTrId("orn-author-hide").arg(app.userName)
+                checked: Storeman.isFilteredUser(app.userName)
+                onCheckedChanged: (checked)
+                    ? Storeman.filterUser(app.userName)
+                    : Storeman.unFilterUser(app.userName)
+            }
         }
 
         VerticalScrollDecorator { }

@@ -413,6 +413,47 @@ void Storeman::startUpdatesTimer()
     }
 }
 
+void Storeman::filterUser(const QString& user)
+{
+    Q_D(Storeman);
+
+    QString key{QStringLiteral("filters/users")};
+
+    auto users = d->settings.value(key).toList();
+
+    if (users.contains(user))
+        return;
+
+    users.append(user);
+    d->settings.setValue(key, users);
+}
+
+void Storeman::unFilterUser(const QString& user)
+{
+    Q_D(Storeman);
+
+    QString key{QStringLiteral("filters/users")};
+
+    auto users = d->settings.value(key).toList();
+
+    if (!users.contains(user))
+        return;
+
+    users.removeAll(user);
+    d->settings.setValue(key, users);
+}
+
+bool Storeman::isFilteredUser(const QString& user)
+{
+    Q_D(Storeman);
+
+    QString key{QStringLiteral("filters/users")};
+
+    auto users = d->settings.value(key).toList();
+
+    return users.contains(user);
+}
+
 void Storeman::checkSystemVersion()
 {
     Q_D(Storeman);

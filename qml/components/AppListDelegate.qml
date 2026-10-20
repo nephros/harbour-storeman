@@ -31,8 +31,22 @@ ListItem {
         }
     }
 
+    ListView.onAdd: AddAnimation {
+        target: appListDelegate
+    }
+
     ListView.onRemove: RemoveAnimation {
         target: appListDelegate
+        duration: 1200
+    }
+
+    Timer { id: hideTimer
+        interval: 1500
+        onTriggered: if(appListDelegate.visible) { appListDelegate.hidden = true }
+    }
+    Component.onCompleted: {
+        if (Storeman.isFilteredUser(model.userName))
+            hideTimer.start()
     }
 
     // Application icon on the left
