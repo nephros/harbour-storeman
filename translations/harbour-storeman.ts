@@ -118,7 +118,7 @@
     </message>
     <message id="orn-dt-format">
         <source>yyyy-MM-dd hh:mm</source>
-        <extracomment>Output format for the date labels.  For details visit https://doc.qt.io/qt-5/qdate.html#toString</extracomment>
+        <extracomment>Output format for the date labels. For details visit http://doc.qt.io/qt-5/qdate.html#toString</extracomment>
         <translation>yyyy-MM-dd hh:mm</translation>
     </message>
     <message id="orn-version-noavailable">
@@ -333,7 +333,6 @@
     </message>
     <message id="orn-development">
         <source>Credits</source>
-        <extracomment>Acknowledgements for contributions - should be a noun</extracomment>
         <translation>Credits</translation>
     </message>
     <message id="orn-developers">
@@ -537,7 +536,7 @@
     </message>
     <message id="orn-error-depresolution">
         <source>Nothing provides %1 needed by %2</source>
-        <extracomment>A template string for a dependency resolution error.  %1 is a dependency and %2 is a failed package.</extracomment>
+        <extracomment>A template string for a dependecy resolution error. %1 is a dependency and %2 is a failed package.</extracomment>
         <translation>Nothing provides %1 needed by %2</translation>
     </message>
     <message id="orn-backups">
@@ -1014,7 +1013,6 @@
     </message>
     <message id="orn-donation">
         <source>Donation</source>
-        <extracomment>Should be a noun</extracomment>
         <translation>Donation</translation>
     </message>
     <message id="orn-cover-updates-available">
@@ -1026,9 +1024,9 @@
         <translation>Package %0 was successfully updated</translation>
     </message>
     <message id="orn-app-description-full">
-        <source>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</source>
-        <extracomment>Avoid to translate the acronym FLOSS (Free, Libre, Open Source Software), just keep it as "(FLOSS)".</extracomment>
-        <translation>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</translation>
+        <source>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</source>
+        <oldsource>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</oldsource>
+        <translation type="unfinished">&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</translation>
     </message>
     <message id="orn-show-details">
         <source>Show details</source>
@@ -1077,6 +1075,10 @@
     <message id="orn-storeman-repo-name">
         <source>Storeman OBS Repository</source>
         <translation>Storeman OBS Repository</translation>
+    </message>
+    <message id="orn-author-hide">
+        <source>Hide all by %0</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

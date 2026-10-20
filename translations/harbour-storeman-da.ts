@@ -73,8 +73,9 @@
         <translation>Fjerner</translation>
     </message>
     <message id="orn-error">
-        <source>An error occured</source>
-        <translation>Der opstod en fejl</translation>
+        <source>An error occurred</source>
+        <oldsource>An error occured</oldsource>
+        <translation type="unfinished">Der opstod en fejl</translation>
     </message>
     <message id="orn-repo-add">
         <source>Add repository</source>
@@ -332,20 +333,23 @@
         <translation>Træk ned for at genindlæse</translation>
     </message>
     <message id="orn-development">
-        <source>Development</source>
-        <translation>Udvikling</translation>
+        <source>Credits</source>
+        <oldsource>Development</oldsource>
+        <translation type="unfinished">Udvikling</translation>
     </message>
     <message id="orn-developers">
         <source>Developers</source>
         <translation>Udviklere</translation>
     </message>
     <message id="orn-appicon">
-        <source>Application Icon</source>
-        <translation>Program Ikon</translation>
+        <source>Application icon</source>
+        <oldsource>Application Icon</oldsource>
+        <translation type="unfinished">Program Ikon</translation>
     </message>
     <message id="orn-sources">
-        <source>Source Code</source>
-        <translation>Kildekode</translation>
+        <source>Source code &amp; Issue tracker</source>
+        <oldsource>Source Code</oldsource>
+        <translation type="unfinished">Kildekode</translation>
     </message>
     <message id="orn-just-now">
         <source>Just now</source>
@@ -1024,8 +1028,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message id="orn-app-description-full">
-        <source>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Issues shall be reported preferably at GitHub or alternatively at OpenRepos (use the buttons below).&lt;/p&gt;</source>
-        <extracomment>Avoid to translate the acronym FLOSS (Free, Libre, Open Source Software).</extracomment>
+        <source>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</source>
+        <oldsource>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Issues shall be reported preferably at GitHub or alternatively at OpenRepos (use the buttons below).&lt;/p&gt;</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message id="orn-show-details">
@@ -1074,6 +1078,10 @@
     </message>
     <message id="orn-storeman-repo-name">
         <source>Storeman OBS Repository</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="orn-author-hide">
+        <source>Hide all by %0</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

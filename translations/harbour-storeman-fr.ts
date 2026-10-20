@@ -1,6 +1,8 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fr">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="fr">
 <context>
-    <name/>
+    <name></name>
     <message id="orn-notrated">
         <source>Not rated yet</source>
         <translation>Pas encore évalué</translation>
@@ -116,7 +118,7 @@
     </message>
     <message id="orn-dt-format">
         <source>yyyy-MM-dd hh:mm</source>
-        <extracomment>Output format for the date labels.  For details visit https://doc.qt.io/qt-5/qdate.html#toString</extracomment>
+        <extracomment>Output format for the date labels. For details visit http://doc.qt.io/qt-5/qdate.html#toString</extracomment>
         <translation>dd.MM.yyyy hh:mm</translation>
     </message>
     <message id="orn-version-noavailable">
@@ -331,7 +333,6 @@
     </message>
     <message id="orn-development">
         <source>Credits</source>
-        <extracomment>Acknowledgements for contributions - should be a noun</extracomment>
         <translation>Crédits</translation>
     </message>
     <message id="orn-developers">
@@ -352,11 +353,17 @@
     </message>
     <message id="orn-mins-ago" numerus="yes">
         <source>%n minute(s) ago</source>
-        <translation><numerusform>il y a %n minute</numerusform><numerusform>il y a %n minutes</numerusform><numerusform>il y a %n minutes</numerusform></translation>
+        <translation>
+            <numerusform>il y a %n minute</numerusform>
+            <numerusform>il y a %n minutes</numerusform>
+        </translation>
     </message>
     <message id="orn-hours-ago" numerus="yes">
         <source>%n hour(s) ago</source>
-        <translation><numerusform>il y a %n heure</numerusform><numerusform>il y a %n heures</numerusform><numerusform>il y a %n heures</numerusform></translation>
+        <translation>
+            <numerusform>il y a %n heure</numerusform>
+            <numerusform>il y a %n heures</numerusform>
+        </translation>
     </message>
     <message id="orn-reply-to">
         <source>Reply to %0</source>
@@ -529,7 +536,7 @@
     </message>
     <message id="orn-error-depresolution">
         <source>Nothing provides %1 needed by %2</source>
-        <extracomment>A template string for a dependency resolution error.  %1 is a dependency and %2 is a failed package.</extracomment>
+        <extracomment>A template string for a dependecy resolution error. %1 is a dependency and %2 is a failed package.</extracomment>
         <translation>Dépendance %1 nécessaire à %2 introuvable</translation>
     </message>
     <message id="orn-backups">
@@ -711,7 +718,10 @@
     <message id="orn-pmstate-multiple" numerus="yes">
         <source>%n operations are in progress</source>
         <extracomment>There are always more than 1 operations</extracomment>
-        <translation><numerusform>%n opération en cours d’exécution </numerusform><numerusform>%n opérations en cours</numerusform><numerusform>%n opérations en cours</numerusform></translation>
+        <translation>
+            <numerusform>%n opération en cours d’exécution </numerusform>
+            <numerusform>%n opérations en cours</numerusform>
+        </translation>
     </message>
     <message id="orn-version-available">
         <source>Available version</source>
@@ -765,11 +775,17 @@
     </message>
     <message id="orn-interval-m" numerus="yes">
         <source>%n minute(s)</source>
-        <translation><numerusform>%n minute</numerusform><numerusform>%n minutes</numerusform><numerusform>%n minutes</numerusform></translation>
+        <translation>
+            <numerusform>%n minute</numerusform>
+            <numerusform>%n minutes</numerusform>
+        </translation>
     </message>
     <message id="orn-interval-h" numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n heure</numerusform><numerusform>%n heures</numerusform><numerusform>%n heures</numerusform></translation>
+        <translation>
+            <numerusform>%n heure</numerusform>
+            <numerusform>%n heures</numerusform>
+        </translation>
     </message>
     <message id="orn-tag-strikeout">
         <source>S</source>
@@ -997,7 +1013,6 @@
     </message>
     <message id="orn-donation">
         <source>Donation</source>
-        <extracomment>Should be a noun</extracomment>
         <translation>Don</translation>
     </message>
     <message id="orn-cover-updates-available">
@@ -1009,9 +1024,9 @@
         <translation>Le paquet %0 a été mis à jour avec succès</translation>
     </message>
     <message id="orn-app-description-full">
-        <source>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</source>
-        <extracomment>Avoid to translate the acronym FLOSS (Free, Libre, Open Source Software), just keep it as &quot;(FLOSS)&quot;.</extracomment>
-        <translation>&lt;p&gt;Client OpenRepos pour SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Ceci est logiciel libre distribué sous les termes de la &lt;a href=&apos;%1&apos;&gt;license&amp;nbsp;MIT&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Vous pouvez signaler un problème sur GitHub (utilisez le bouton ci-dessous).&lt;/p&gt;</translation>
+        <source>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</source>
+        <oldsource>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</oldsource>
+        <translation type="unfinished">&lt;p&gt;Client OpenRepos pour SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Ceci est logiciel libre distribué sous les termes de la &lt;a href=&apos;%1&apos;&gt;license&amp;nbsp;MIT&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Vous pouvez signaler un problème sur GitHub (utilisez le bouton ci-dessous).&lt;/p&gt;</translation>
     </message>
     <message id="orn-show-details">
         <source>Show details</source>
@@ -1060,6 +1075,10 @@
     <message id="orn-storeman-repo-name">
         <source>Storeman OBS Repository</source>
         <translation>Dépôt Storeman OBS</translation>
+    </message>
+    <message id="orn-author-hide">
+        <source>Hide all by %0</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

@@ -1,6 +1,8 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ru">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ru">
 <context>
-    <name/>
+    <name></name>
     <message id="orn-notrated">
         <source>Not rated yet</source>
         <translation>Без оценки</translation>
@@ -116,7 +118,7 @@
     </message>
     <message id="orn-dt-format">
         <source>yyyy-MM-dd hh:mm</source>
-        <extracomment>Output format for the date labels.  For details visit https://doc.qt.io/qt-5/qdate.html#toString</extracomment>
+        <extracomment>Output format for the date labels. For details visit http://doc.qt.io/qt-5/qdate.html#toString</extracomment>
         <translation>hh:mm, dd.MM.yyyy</translation>
     </message>
     <message id="orn-version-noavailable">
@@ -331,7 +333,6 @@
     </message>
     <message id="orn-development">
         <source>Credits</source>
-        <extracomment>Acknowledgements for contributions - should be a noun</extracomment>
         <translation>Разработка</translation>
     </message>
     <message id="orn-developers">
@@ -352,11 +353,19 @@
     </message>
     <message id="orn-mins-ago" numerus="yes">
         <source>%n minute(s) ago</source>
-        <translation><numerusform>%n минуту назад</numerusform><numerusform>%n минуты назад</numerusform><numerusform>%n минут назад</numerusform><numerusform>%n минут назад</numerusform></translation>
+        <translation>
+            <numerusform>%n минуту назад</numerusform>
+            <numerusform>%n минуты назад</numerusform>
+            <numerusform>%n минут назад</numerusform>
+        </translation>
     </message>
     <message id="orn-hours-ago" numerus="yes">
         <source>%n hour(s) ago</source>
-        <translation><numerusform>%n час назад</numerusform><numerusform>%n часа назад</numerusform><numerusform>%n часов назад</numerusform><numerusform>%n часов назад</numerusform></translation>
+        <translation>
+            <numerusform>%n час назад</numerusform>
+            <numerusform>%n часа назад</numerusform>
+            <numerusform>%n часов назад</numerusform>
+        </translation>
     </message>
     <message id="orn-reply-to">
         <source>Reply to %0</source>
@@ -531,7 +540,7 @@ Storeman не передает ваш пароль третьим лицам.</t
     </message>
     <message id="orn-error-depresolution">
         <source>Nothing provides %1 needed by %2</source>
-        <extracomment>A template string for a dependency resolution error.  %1 is a dependency and %2 is a failed package.</extracomment>
+        <extracomment>A template string for a dependecy resolution error. %1 is a dependency and %2 is a failed package.</extracomment>
         <translation>Невозможно удовлетворить зависимость %1, необходимую для %2.</translation>
     </message>
     <message id="orn-backups">
@@ -713,7 +722,11 @@ Storeman не передает ваш пароль третьим лицам.</t
     <message id="orn-pmstate-multiple" numerus="yes">
         <source>%n operations are in progress</source>
         <extracomment>There are always more than 1 operations</extracomment>
-        <translation><numerusform>Выполняется %n действие</numerusform><numerusform>Выполняется %n действия</numerusform><numerusform>Выполняется %n действий</numerusform><numerusform>Выполняется %n действий</numerusform></translation>
+        <translation>
+            <numerusform>Выполняется %n действие</numerusform>
+            <numerusform>Выполняется %n действия</numerusform>
+            <numerusform>Выполняется %n действий</numerusform>
+        </translation>
     </message>
     <message id="orn-version-available">
         <source>Available version</source>
@@ -767,11 +780,19 @@ Storeman не передает ваш пароль третьим лицам.</t
     </message>
     <message id="orn-interval-m" numerus="yes">
         <source>%n minute(s)</source>
-        <translation><numerusform>%n минута</numerusform><numerusform>%n минуты</numerusform><numerusform>%n минут</numerusform><numerusform>%n минут</numerusform></translation>
+        <translation>
+            <numerusform>%n минута</numerusform>
+            <numerusform>%n минуты</numerusform>
+            <numerusform>%n минут</numerusform>
+        </translation>
     </message>
     <message id="orn-interval-h" numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n час</numerusform><numerusform>%n часа</numerusform><numerusform>%n часов</numerusform><numerusform>%n часов</numerusform></translation>
+        <translation>
+            <numerusform>%n час</numerusform>
+            <numerusform>%n часа</numerusform>
+            <numerusform>%n часов</numerusform>
+        </translation>
     </message>
     <message id="orn-tag-strikeout">
         <source>S</source>
@@ -999,7 +1020,6 @@ Storeman не передает ваш пароль третьим лицам.</t
     </message>
     <message id="orn-donation">
         <source>Donation</source>
-        <extracomment>Should be a noun</extracomment>
         <translation>Поддержать</translation>
     </message>
     <message id="orn-cover-updates-available">
@@ -1011,9 +1031,9 @@ Storeman не передает ваш пароль третьим лицам.</t
         <translation>Пакет %0 успешно обновлен</translation>
     </message>
     <message id="orn-app-description-full">
-        <source>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</source>
-        <extracomment>Avoid to translate the acronym FLOSS (Free, Libre, Open Source Software), just keep it as &quot;(FLOSS)&quot;.</extracomment>
-        <translation>&lt;p&gt;Клиент OpenRepos для SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Исходный код Storeman распространяется в соответствии с условиями &lt;a href=&quot;%1&quot;&gt;лицензии&amp;nbsp;MIT&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Вы можете сообщить об ошибке на GitHub или OpenRepos (используйте кнопки ниже).&lt;/p&gt;</translation>
+        <source>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</source>
+        <oldsource>&lt;p&gt;OpenRepos client application for SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Storeman is Free Software (FLOSS), distributed under the terms of the &lt;a href=&apos;%1&apos;&gt;MIT&amp;nbsp;license&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Any issues (bug reports, feature suggestions, help requests etc.) shall be filed at GitHub (you may use the button below).&lt;/p&gt;</oldsource>
+        <translation type="unfinished">&lt;p&gt;Клиент OpenRepos для SailfishOS&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Исходный код Storeman распространяется в соответствии с условиями &lt;a href=&quot;%1&quot;&gt;лицензии&amp;nbsp;MIT&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Вы можете сообщить об ошибке на GitHub или OpenRepos (используйте кнопки ниже).&lt;/p&gt;</translation>
     </message>
     <message id="orn-show-details">
         <source>Show details</source>
@@ -1062,6 +1082,10 @@ Storeman не передает ваш пароль третьим лицам.</t
     <message id="orn-storeman-repo-name">
         <source>Storeman OBS Repository</source>
         <translation>Репозиторий Storeman OBS</translation>
+    </message>
+    <message id="orn-author-hide">
+        <source>Hide all by %0</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
